@@ -1,4 +1,4 @@
-import AUTO_CAD_COLOR_INDEX from './AutoCadColorIndex';
+import AUTO_CAD_COLOR_INDEX from './AutoCadColorIndex.js';
 
 /**
  * Returns the truecolor value of the given AutoCad color index value

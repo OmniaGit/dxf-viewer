@@ -1,6 +1,6 @@
-import {DxfFetcher} from "./DxfFetcher"
-import {DxfScene} from "./DxfScene"
-import opentype from "opentype.js"
+import {DxfFetcher} from "./DxfFetcher.js"
+import {DxfScene} from "./DxfScene.js"
+//import opentype from "opentype.js"
 
 const MSG_SIGNATURE = "DxfWorkerMsg"
 
@@ -77,7 +77,7 @@ export class DxfWorker {
     async _ProcessRequestMessage(type, data, transfers, seq) {
         switch (type) {
         case DxfWorker.WorkerMsg.LOAD: {
-            const scene = await this._Load(
+            const scene = this._Load(
                 data.url,
                 data.fonts,
                 data.options,

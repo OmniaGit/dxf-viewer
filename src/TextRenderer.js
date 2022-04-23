@@ -1,8 +1,9 @@
-import {DxfScene, Entity} from "./DxfScene"
-import {ShapePath} from "three/src/extras/core/ShapePath"
-import {ShapeUtils} from "three/src/extras/ShapeUtils"
-import {Matrix3, Vector2} from "three"
-import {MTextFormatParser} from "./MTextFormatParser";
+import {DxfScene, Entity} from "./DxfScene.js"
+import {ShapePath} from "../../three.js/src/extras/core/ShapePath.js"
+import {ShapeUtils} from "../../three.js/src/extras/ShapeUtils.js"
+import {Matrix3} from "../../three.js/src/math/Matrix3.js"
+import {Vector2} from "../../three.js/src/math/Vector2.js"
+import {MTextFormatParser} from "./MTextFormatParser.js";
 
 /**
  * Helper class for rendering text.

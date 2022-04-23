@@ -1,9 +1,9 @@
-import {DynamicBuffer, NativeType} from "./DynamicBuffer"
-import {BatchingKey} from "./BatchingKey"
+import {DynamicBuffer, NativeType} from "./DynamicBuffer.js"
+import {BatchingKey} from "./BatchingKey.js"
 import {Matrix3, Vector2} from "three"
-import {TextRenderer} from "./TextRenderer"
-import {RBTree} from "./RBTree"
-import {MTextFormatParser} from "./MTextFormatParser";
+import {TextRenderer} from "./TextRenderer.js"
+import {RBTree} from "./RBTree.js"
+import {MTextFormatParser} from "./MTextFormatParser.js";
 
 /** Use 16-bit indices for indexed geometry. */
 const INDEXED_CHUNK_SIZE = 0x10000
