@@ -703,7 +703,10 @@ DxfParser.prototype._parse = function(dxfString) {
     var parsePoint = function() {
         var point = {},
             code = curr.code;
-
+        point.x=0.0;
+        point.y =0.0;
+        point.z=0.0;
+        
         point.x = curr.value;
 
         code += 10;
