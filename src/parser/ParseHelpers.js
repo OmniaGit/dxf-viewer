@@ -15,10 +15,14 @@ export function getAcadColor(index) {
  */
 export function parsePoint(scanner) {
     var point = {};
-
+    point.x = 0.0;
+    point.y = 0.0;
+    point.z = 0.0;
+    
     // Reread group for the first coordinate
     scanner.rewind();
     var curr = scanner.next();
+    // set default values
 
     var code = curr.code;
     point.x = curr.value;

@@ -1247,7 +1247,7 @@ export class DxfScene {
             return blockCtx.TransformVertex(v)
         }
         this._UpdateBounds(v)
-        return { x: v.x - this.origin.x, y: v.y - this.origin.y }
+        return { x: v.x - this.origin.x, y: v.y - this.origin.y ,z: 0.0}
     }
 
     /** @param v {{x,y}} Vertex to extend bounding box with and set origin. */
@@ -1579,7 +1579,7 @@ class BlockContext {
      * @return {{x,y}}
      */
     TransformVertex(v) {
-        const result = new Vector2(v.x, v.y).applyMatrix3(this.transform)
+        const result = new Vector2(v.x, v.y, 0.0).applyMatrix3(this.transform)
         if (this.type !== BlockContext.Type.DEFINITION &&
             this.type !== BlockContext.Type.NESTED_DEFINITION) {
 
